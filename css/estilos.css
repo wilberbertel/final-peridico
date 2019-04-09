@@ -1,0 +1,99 @@
+ /* aplica a toda la pagina */
+*{
+    box-sizing: border-box;
+  }
+   /* aplica al cuerpo de  la pagina*/
+  body {
+    font-family: Arial;
+    padding: 10px;
+    background: #f1f1f1;
+  }
+ /* aplica al encabezado de la pagina*/
+  .header {
+    padding: 30px;
+    text-align: center;
+    
+  }
+   /* color y efecto del menu*/
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+ /* aplica al menu */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+   /* letra y efecto del boton del menu de la pagina */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: red;
+  }
+
+  .columnaizquierda {   
+    float: left;
+    width: 73%;
+  }
+  
+ 
+  .columnaderecha {
+    float: left;
+    width: 27%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+  }
+  
+  
+  /* diviciones */
+  .divicion {
+    background-color: white;
+    padding: 5px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 30px 10px 20px #aaa; 
+    box-shadow: inset 0px 0px 40px rgb(44, 42, 42),
+                    0px 0px 40px #aaa; 
+  }
+  
+  /* coloca cada caja en su lugar */
+  .todo:after {
+    content: "";
+    display: table;
+    clear: both;
+   
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
+  .texto{
+    text-shadow: 3px 3px 5px rgb(156, 138, 138),
+               6px 6px 5px rgb(78, 80, 78),
+               9px 9px 5px rgb(0, 0, 0);
+  }
